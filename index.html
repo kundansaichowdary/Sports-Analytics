@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricklytics</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .main {
+        margin: 15px 12px;
+        margin-bottom: 75px;
+        min-width: 259px;
+      }
+
+      Projectmain {
+        max-width: 1200px;
+        margin-inline: auto;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 25px;
+      }
+
+      .Projectmain-content {
+        min-width: 105%;
+        width: 100%;
+      }
+      #PT {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 0px;
+      }
+      .proImg {
+        margin: 30px 150px 10px 30px;
+        border-radius: 10px;
+        height: 350px;
+        width: 750px;
+      }
+
+      .exImg {
+        margin: 30px 10px 10px 0px;
+        border-radius: 10px;
+        height: 1200px;
+        width: 850px;
+      }
+      .fImg {
+        margin: 30px 10px 10px 0px;
+        border-radius: 10px;
+        height: 200px;
+        width: 800px;
+      }
+      .resImg {
+        margin: 30px 150px 10px 30px;
+        border-radius: 10px;
+        height: 750px;
+        width: 750px;
+      }
+      .eqnImg {
+        margin: 30px 150px 10px 30px;
+        border-radius: 10px;
+        height: 200px;
+        width: 750px;
+      }
+      article.about {
+        padding: 40px;
+        max-width: 950px;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+
+      article.about section.about-text {
+        line-height: 1.7;
+        margin-bottom: 40px;
+      }
+
+      article.about h2,
+      article.about h3,
+      article.about h4 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      article.about p {
+        margin-bottom: 20px;
+      }
+
+      article.about ul,
+      article.about ol {
+        padding-left: 40px;
+        margin-bottom: 20px;
+      }
+
+      article.about ul li,
+      article.about ol li {
+        margin-bottom: 10px;
+      }
+
+      article.about h4 {
+        font-weight: 600;
+        padding: 6px 12px;
+        border-radius: 4px;
+      }
+
+      article.about ul li::marker,
+      article.about ol li::marker {
+        font-weight: bold;
+      }
+
+      .modal-container {
+        padding: 20px;
+        margin-top: 30px;
+      }
+      article.resume {
+        padding: 40px;
+        max-width: 950px;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+
+      article.resume section.about-text {
+        line-height: 1.7;
+        margin-bottom: 40px;
+      }
+
+      article.resume h2,
+      article.resume h3,
+      article.resume h4 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+
+      article.resume p {
+        margin-bottom: 20px;
+      }
+
+      article.resume ul,
+      article.resume ol {
+        padding-left: 40px;
+        margin-bottom: 20px;
+      }
+
+      article.resume ul li,
+      article.resume ol li {
+        margin-bottom: 10px;
+      }
+
+      article.resume h4 {
+        font-weight: 600;
+        padding: 6px 12px;
+        border-left: 4px solid;
+        border-radius: 4px;
+      }
+
+      article.resume ul li::marker,
+      article.resume ol li::marker {
+        font-weight: bold;
+      }
+      article.portfolio {
+        padding: 40px;
+        max-width: 950px;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+
+      article.portfolio section.about-text {
+        line-height: 1.7;
+        margin-bottom: 40px;
+      }
+
+      article.portfolio h2,
+      article.portfolio h3,
+      article.portfolio h4 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      article.portfolio p {
+        margin-bottom: 20px;
+      }
+
+      article.portfolio ul,
+      article.portfolio ol {
+        padding-left: 40px;
+        margin-bottom: 20px;
+      }
+
+      article.portfolio ul li,
+      article.portfolio ol li {
+        margin-bottom: 10px;
+      }
+
+      article.portfolio h4 {
+        font-weight: 600;
+      }
+
+      article.portfolio ul li::marker,
+      article.portfolio ol li::marker {
+        font-weight: bold;
+      }
+      article.contact {
+        padding: 40px;
+        max-width: 900px;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+
+      article.contact section.about-text {
+        line-height: 1.7;
+        margin-bottom: 40px;
+      }
+
+      article.contact h2,
+      article.contact h3,
+      article.contact h4 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-weight: 600;
+      }
+
+      article.contact p {
+        margin-bottom: 20px;
+      }
+
+      article.contact ul {
+        padding-left: 40px;
+        margin-bottom: 20px;
+      }
+
+      article.contact ul li {
+        margin-bottom: 10px;
+      }
+
+      article.contact ul li::marker {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="h2" id="PT">Cricklytics</h1>
+    </header>
+
+    <main>
+      <div class="sidebar-info">
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>
+                Introduction
+              </button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>DataPrep_EDA</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Analysis</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Conclusion</button>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="about active" data-page="introduction">
+          <header>
+            <h2 class="h2 article-title">Introduction</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Cricket, once governed purely by instinct and experience, has
+              evolved into a sport heavily influenced by data-driven decisions.
+              From team selection to in-game strategy, performance analytics has
+              become central to gaining a competitive edge. The rise of global
+              tournaments, fantasy leagues, and high-stakes international
+              fixtures has intensified the demand for intelligent systems that
+              can interpret player performance and predict match outcomes with
+              reliability.
+              <br /><br />
+              This project, titled <b>Cricklytics</b>, is built around the core
+              idea of transforming raw cricket performance data into actionable
+              insights. It aims to simulate how selectors, analysts, and
+              strategists might approach key decisions if they had access to a
+              fully quantified view of player capabilities. <br /><br />
+              The primary objectives of this project are twofold:
+            </p>
+            <ul>
+              <li>
+                <b>Best XI Selector:</b> Given a set of international teams, the
+                system dynamically constructs an optimal playing XI based on
+                player roles, historical consistency, and all-round performance.
+                It ensures balance across key roles such as openers,
+                middle-order anchors, finishers, all-rounders, and specialist
+                bowlers, emulating the complexity of real-world team
+                composition.
+              </li>
+              <li>
+                <b>Win Probability Estimator:</b> By analyzing the performance
+                strength of individual squads, the model predicts the likelihood
+                of one team defeating another. This feature is designed to
+                simulate pre-match strategy scenarios, aiding analysts, fans,
+                and fantasy players in anticipating likely outcomes based on
+                past performance data.
+              </li>
+            </ul>
+            <p>
+              The design of Cricklytics is inspired by how modern teams evaluate
+              players not just on reputation or individual stats in isolation,
+              but on how their roles, styles, and impact align with broader team
+              dynamics. By objectively scoring each player's contribution across
+              multiple dimensions, Cricklytics delivers a comprehensive and
+              unbiased framework for team analysis and match prediction.
+              <br /><br />
+              The system will rely on advanced data processing, feature
+              engineering, performance modeling, and ML-driven decision-making.
+              It can serve applications in sports analytics, fantasy leagues,
+              coaching dashboards, and strategic planning for team management.
+              <br /><br />
+              Ultimately, this system reflects the future of cricket
+              intelligence — where intuition meets data, and selection meets
+              simulation.
+            </p>
+          </section>
+
+          <header>
+            <h3 class="h3 article-title">
+              Questions That I Intend to Investigate by the End of the Project
+            </h3>
+          </header>
+
+          <section class="about-text">
+            <ol>
+              <li>
+                1. Who are the most well-rounded and consistently
+                high-performing players across different formats and roles?
+              </li>
+              <li>
+                2. Can we dynamically identify the best possible playing XI from
+                any set of international teams while maintaining a balanced
+                structure of batting, bowling, and all-round capabilities?
+              </li>
+              <li>
+                3. How can historical performance metrics be used to assign
+                players into meaningful cricketing roles like openers,
+                middle-order anchors, finishers, all-rounders, and specialist
+                bowlers?
+              </li>
+              <li>
+                4. What features (e.g., strike rate, bowling economy, boundary
+                percentage) have the greatest impact in differentiating top
+                performers from average ones across disciplines?
+              </li>
+              <li>
+                5. How do two international teams compare based on the
+                collective historical performance of their players?
+              </li>
+              <li>
+                6. Can we predict the probable outcome of a cricket match based
+                on the performance profiles of the squads involved, independent
+                of external factors like venue or toss?
+              </li>
+              <li>
+                7. How do player selections affect the overall strength and
+                balance of a team, and what trade-offs are made when one role is
+                over- or under-represented?
+              </li>
+              <li>
+                8. How can player-level statistics be aggregated and weighted to
+                quantify their overall value in team success?
+              </li>
+            </ol>
+          </section>
+
+          <header>
+            <h2 class="h2 article-title">
+              Player Role Classification and Selection Criteria
+            </h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Constructing a balanced and high-performing cricket team requires
+              more than just selecting players with impressive statistics. The
+              best teams are those that strategically distribute roles across
+              batting, bowling, and all-round capabilities while ensuring
+              adaptability to various match conditions. This section outlines
+              the data-driven methodology employed to identify the Best Playing
+              XI, ensuring each selected player fits a well-defined cricketing
+              role based on historical performance metrics.
+              <br /><br />
+              To simulate real-world team composition logic, the squad was
+              designed to include:
+            </p>
+            <ul>
+              <li>• 2 Openers</li>
+              <li>• 3 Middle-Order Anchors</li>
+              <li>• 1 Finisher</li>
+              <li>• 2 All-Rounders</li>
+              <li>• 3 Specialist Fast Bowlers</li>
+            </ul>
+            <p>
+              Each category has distinct expectations, and thus, role-specific
+              selection criteria were developed as follows:
+            </p>
+
+            <h4>Openers (2 Players)</h4>
+            <ul>
+              <li>
+                • Batting Average > 30: Reflects consistency and ability to
+                occupy the crease
+              </li>
+              <li>• Strike Rate > 140: Indicates aggressive scoring ability</li>
+              <li>
+                • Boundary Percentage > 50%: Shows intent and ability to
+                dominate bowlers early
+              </li>
+              <li>
+                • Players with an average batting position of 1-2 and a high
+                boundary conversion rate were prioritized.
+              </li>
+            </ul>
+
+            <h4>Middle-Order Batsmen (3 Players)</h4>
+            <ul>
+              <li>
+                • Batting Average > 40: Ensures reliability under pressure
+              </li>
+              <li>
+                • Strike Rate > 125: Balances aggression with sustainability
+              </li>
+              <li>
+                • Average Balls Faced > 20: Indicates capacity to build an
+                innings and absorb pressure
+              </li>
+              <li>
+                • These players typically bat in positions 3-5 and anchor the
+                innings during middle overs.
+              </li>
+            </ul>
+
+            <h4>Finisher (1 Player)</h4>
+            <ul>
+              <li>
+                • Batting Average > 25: Demonstrates ability to score
+                consistently
+              </li>
+              <li>
+                • Strike Rate > 130: Emphasizes explosive scoring in short
+                timeframes
+              </li>
+              <li>
+                • Batting Position > 5 and Avg Balls Faced > 15: Indicates
+                lower-order presence with enough impact time
+              </li>
+              <li>
+                • Additionally, finishers who contributed with the ball were
+                marked for bonus consideration.
+              </li>
+            </ul>
+
+            <h4>All-Rounders (2 Players)</h4>
+            <ul>
+              <li>
+                • Batting Average > 15 and Strike Rate > 140: Indicates useful
+                contributions with the bat
+              </li>
+              <li>
+                • Bowling Economy < 7 and Bowling Strike Rate < 20: Reflects
+                efficiency and wicket-taking ability
+              </li>
+              <li>
+                • Minimum threshold for innings batted and bowled to ensure
+                regular involvement in both roles
+              </li>
+              <li>
+                • Preference was given to players with a measurable impact in
+                both disciplines across multiple matches.
+              </li>
+            </ul>
+
+            <h4>Specialist Fast Bowlers (3 Players)</h4>
+            <ul>
+              <li>• Bowling Economy < 7: Restricts scoring opportunities</li>
+              <li>
+                • Bowling Strike Rate < 16: Highlights wicket-taking frequency
+              </li>
+              <li>
+                • Dot Ball Percentage > 40%: Indicates control and
+                pressure-building capability
+              </li>
+              <li>• Minimum 6 innings bowled for consistency</li>
+              <li>
+                • Only seamers and pace bowlers were considered under this
+                category to maintain role specificity.
+              </li>
+            </ul>
+
+            <p>
+              This layered and data-driven selection framework ensures that the
+              final playing XI is not just a lineup of statistically strong
+              individuals, but a strategically balanced squad designed to
+              complement each other's roles — emulating how top-tier teams
+              approach modern cricket selection.
+            </p>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </section>
+          </div>
+        </article>
+
+        <article class="resume" data-page="dataprep_eda">
+          <header>
+            <h2 class="h3 article-title">Data Preparation</h2>
+          </header>
+          <section class="about-text">
+            <div>
+              <h2>Effective Data Preparation</h2>
+              <p>
+                Effective data preparation is the foundation for any successful
+                analytics project. In Cricklytics, we worked with scraped JSON
+                data from ESPNcricinfo and transformed it into structured,
+                reliable, and linkable CSV datasets. The entire preprocessing
+                pipeline was broken down into four major components: match
+                summary, batting, bowling, and player metadata. Each was
+                cleaned, standardized, and made analysis-ready.
+              </p>
+            </div>
+
+            <div>
+              <h3>Data Preprocessing Pipeline</h3>
+
+              <h4>1. Match Summary Processing</h4>
+              <p>Key steps:</p>
+              <ul>
+                <li>Loaded raw match summary data from a JSON structure.</li>
+                <li>
+                  Renamed <b>scorecard</b> to <b>match_id</b> for consistency.
+                </li>
+                <li>
+                  Created a <b>match_ids_dict</b> using team combinations (e.g.,
+                  "India Vs Australia").
+                </li>
+                <li>
+                  Enabled efficient joining of batting and bowling datasets by
+                  match.
+                </li>
+                <li>Exported as <b>match Summary.csv</b>.</li>
+              </ul>
+
+              <h4>2. Batting Summary Processing</h4>
+              <p>Key steps:</p>
+              <ul>
+                <li>Imported match-wise batting data from JSON.</li>
+                <li>Added <b>out/not_out</b> column from dismissal info.</li>
+                <li>
+                  Linked rows with <b>match_id</b> using <b>match_ids_dict</b>.
+                </li>
+                <li>Cleaned names by removing symbols (c), †.</li>
+                <li>Dropped redundant <b>dismissal</b> column.</li>
+                <li>Saved as <b>batting Summary.csv</b>.</li>
+              </ul>
+
+              <h4>3. Bowling Summary Processing</h4>
+              <p>Key steps:</p>
+              <ul>
+                <li>Loaded data from JSON.</li>
+                <li>Mapped records to <b>match_id</b>.</li>
+                <li>
+                  Ensured numeric typing for <b>overs</b>, <b>wickets</b>,
+                  <b>economy</b>.
+                </li>
+                <li>Saved as <b>bowling Summary.csv</b>.</li>
+              </ul>
+
+              <h4>4. Player Information Processing</h4>
+              <p>Key steps:</p>
+              <ul>
+                <li>Loaded player metadata from JSON.</li>
+                <li>
+                  Filled missing <b>description</b> with
+                  <i>"No description available"</i>.
+                </li>
+                <li>
+                  Replaced null <b>bowlingStyle</b> with
+                  <i>"Not Applicable"</i>.
+                </li>
+                <li>Removed duplicate and non-informative records.</li>
+                <li>Aligned names by stripping symbols ((c), †).</li>
+                <li>Saved as <b>players Info.csv</b>.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>📊 CSV Column Summaries</h3>
+
+              <h4>📄 match Summary.csv</h4>
+              <ul>
+                <li><b>team1, team2:</b> Competing teams.</li>
+                <li><b>winner, margin:</b> Match outcome.</li>
+                <li><b>ground, matchDate:</b> Venue and date.</li>
+                <li><b>match_id:</b> Unique join key.</li>
+              </ul>
+
+              <h4>📄 batting Summary.csv</h4>
+              <ul>
+                <li>
+                  <b
+                    >batsmanName, teamInnings, battingPos, runs, balls, 4s, 6s,
+                    SR</b
+                  >
+                </li>
+                <li><b>out/not_out:</b> Binary dismissal indicator.</li>
+                <li><b>match_id:</b> Match identifier.</li>
+              </ul>
+
+              <h4>📄 bowling Summary.csv</h4>
+              <ul>
+                <li>
+                  <b
+                    >bowlerName, bowlingTeam, overs, maiden, runs, wickets,
+                    economy</b
+                  >
+                </li>
+                <li>
+                  <b>0s, 4s, 6s, wides, noBalls:</b> Ball-by-ball insights.
+                </li>
+                <li><b>match_id:</b> Match link key.</li>
+              </ul>
+
+              <h4>📄 players Info.csv</h4>
+              <ul>
+                <li><b>name:</b> Player name.</li>
+                <li><b>battingStyle, bowlingStyle:</b> Technical profiles.</li>
+                <li>
+                  <b>playingRole:</b> Role type (e.g., Allrounder, Bowler).
+                </li>
+                <li><b>description:</b> Player bio or context.</li>
+              </ul>
+              <p>
+                For the complete preprocessing code and implementation details,
+                please refer to the
+                <strong>Preprocessing Code Notebook</strong> linked below.
+              </p>
+
+              <p>
+                <a
+                  href="https://colab.research.google.com/drive/1SK_BMykfte7qsRctlP020t4pfETqtbuQ?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Preprocessing Code
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <h2>Metric Definition & Design Using DAX Logic</h2>
+              <p>
+                To derive meaningful insights from raw cricket performance data,
+                we developed a curated set of measures and calculated columns.
+                These metrics serve as the foundation for player evaluation,
+                comparison, and modeling. All DAX logic was derived from
+                cricketing principles and mapped directly to the processed
+                tables (batting Summary, bowling Summary).
+              </p>
+              <h3>🏏 Batting Performance Metrics</h3>
+              <ul>
+                <li>
+                  <b>Total Runs:</b> Captures the cumulative run-scoring ability
+                  of a player across all innings. High total runs reflect both
+                  experience and impact.
+                </li>
+                <li>
+                  <b>Total Innings Batted:</b> Indicates how frequently a
+                  batsman gets the opportunity to bat, helping normalize other
+                  metrics like average or strike rate.
+                </li>
+                <li>
+                  <b>Total Innings Dismissed:</b> Shows the number of times a
+                  player got out; essential for calculating batting average and
+                  understanding reliability.
+                </li>
+                <li>
+                  <b>Batting Average:</b> Measures consistency; a high average
+                  suggests the player is dependable and contributes
+                  consistently.
+                </li>
+                <li>
+                  <b>Total Balls Faced:</b> Indicates how long a player
+                  typically stays at the crease; important for identifying
+                  anchors and innings-builders.
+                </li>
+                <li>
+                  <b>Strike Rate:</b> Reflects how quickly a player scores;
+                  vital for distinguishing aggressive hitters and traditional
+                  players.
+                </li>
+                <li>
+                  <b>Batting Position:</b> Represents typical lineup position;
+                  helps classify players into openers, middle-order, or
+                  lower-order roles.
+                </li>
+                <li>
+                  <b>Boundary Percentage:</b> Measures how much of a player's
+                  runs come from boundaries; high value indicates aggressive
+                  batting.
+                </li>
+                <li>
+                  <b>Average Balls Faced per Innings:</b> Gives insight into a
+                  player's ability to handle pressure and anchor long innings.
+                </li>
+              </ul>
+
+              <h3>🎯 Bowling Performance Metrics</h3>
+              <ul>
+                <li>
+                  <b>Wickets:</b> Tracks how many dismissals a bowler has
+                  achieved; a direct indicator of bowling effectiveness.
+                </li>
+                <li>
+                  <b>Balls Bowled:</b> Total deliveries bowled; helps
+                  contextualize strike rate, economy, and dot-ball metrics.
+                </li>
+                <li>
+                  <b>Runs Conceded:</b> Indicates runs a bowler gave away;
+                  crucial for measuring control and efficiency.
+                </li>
+                <li>
+                  <b>Bowling Economy:</b> Average runs conceded per over; key in
+                  white-ball formats for run control.
+                </li>
+                <li>
+                  <b>Bowling Strike Rate:</b> How often a bowler takes wickets;
+                  lower values mean higher efficiency.
+                </li>
+                <li>
+                  <b>Bowling Average:</b> Runs conceded per wicket; balanced
+                  bowlers tend to have a lower average.
+                </li>
+                <li>
+                  <b>Total Innings Bowled:</b> Number of matches bowled;
+                  indicates experience and workload.
+                </li>
+                <li>
+                  <b>Dot Ball Percentage:</b> How often the bowler delivers
+                  non-scoring balls; identifies pressure builders and economical
+                  bowlers.
+                </li>
+              </ul>
+
+              <h3>🧮 Calculated Columns for Enhanced Insight</h3>
+              <ul>
+                <li>
+                  <b>Boundary Runs (Batting):</b> Derived metric showing runs
+                  scored from just boundaries; assesses attacking contribution.
+                </li>
+                <li>
+                  <b>Boundary Runs (Bowling):</b> Measures runs conceded through
+                  boundaries; assesses vulnerability against aggressive batting.
+                </li>
+              </ul>
+              <p>
+                These measures are integral to every component of the
+                Cricklytics system—from player scoring and Best XI selection to
+                team strength evaluation and match outcome prediction.
+              </p>
+              <br />
+              <p>
+                For a comprehensive explanation of the formulas, logic, and
+                implementation details used in this analysis, please refer to
+                the
+                <strong>DAX Measures Documentation</strong> linked below.
+              </p>
+
+              <p>
+                <a
+                  href="https://drive.google.com/file/d/1xNJQLQB7eoI-2RQzQeCAOWYR8susKdXg/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View DAX Measures Documentation
+                </a>
+              </p>
+            </div>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="analysis">
+          <header>
+            <h3 class="h3 article-title">Analysis</h3>
+          </header>
+          <section class="about-text">
+            <h2>Best XI Selector Role-Based Team Optimization</h2>
+            <h3>🎯 Objective</h3>
+            <p>
+              The Best XI Selector is designed to automatically generate the
+              most balanced and high-performing cricket team from any given set
+              of countries. It ensures the selected XI covers all critical
+              roles—openers, middle-order batters, finishers, all-rounders, and
+              bowlers—while maximizing overall impact using a custom scoring
+              system.
+            </p>
+
+            <h3>🧠 Selection Strategy</h3>
+            <p>
+              Players are categorized into functional roles based on historical
+              performance patterns using a performance-driven classification
+              system. Dynamically assigned roles include:
+            </p>
+            <ul>
+              <li>
+                <b>Openers (2):</b> Top-order batters with high strike rate,
+                average, and boundary percentage.
+              </li>
+              <li>
+                <b>Middle Order (3):</b> Anchors facing more deliveries with
+                solid averages who accelerate innings.
+              </li>
+              <li>
+                <b>Finisher (1):</b> Impact batters in lower positions with high
+                strike rates finishing games under pressure.
+              </li>
+              <li>
+                <b>All-Rounders (2):</b> Players meeting batting and bowling
+                thresholds, contributing in both disciplines.
+              </li>
+              <li>
+                <b>Fast Bowlers (3):</b> Specialists with economical figures,
+                frequent wickets, and high dot-ball rates.
+              </li>
+            </ul>
+
+            <h3>⚙️ Role Assignment Logic</h3>
+            <p>
+              Metrics like batting average, strike rate, batting position,
+              wickets, economy, and bowling strike rate determine roles. For
+              example:
+            </p>
+            <ul>
+              <li>
+                A low-order batter with a high strike rate becomes a Finisher.
+              </li>
+              <li>
+                A bowler with excellent economy and high wicket tally becomes a
+                Fast Bowler.
+              </li>
+              <li>Players excelling in both are classified as All-Rounders.</li>
+            </ul>
+
+            <h3>📊 Scoring System</h3>
+            <p>
+              Each player receives a total score balancing batting and bowling
+              metrics:
+            </p>
+            <ul>
+              <li>
+                <b>Batting Score:</b> Batting average, strike rate, boundary
+                percentage.
+              </li>
+              <li>
+                <b>Bowling Score:</b> Wickets, economy, pressure-building
+                capabilities.
+              </li>
+              <li>
+                <b>Total Score:</b> Sum of Batting Score and Bowling Score; top
+                scores within roles are selected.
+              </li>
+            </ul>
+
+            <h3>🔄 Fallback Strategy</h3>
+            <p>If fewer players exist in a role, fallback rules fill gaps:</p>
+            <ul>
+              <li>Add extra bowler if only one all-rounder is found.</li>
+              <li>
+                If no all-rounders, fill slots with top-ranked Bowlers,
+                Finishers, or Middle Order players.
+              </li>
+            </ul>
+            <p>This guarantees 11 players while preserving team balance.</p>
+
+            <h3>Output</h3>
+            <p>
+              The final output is a ranked Best XI list by role type and impact
+              score, supporting:
+            </p>
+            <ul>
+              <li>Strategic team planning</li>
+              <li>Fantasy league optimization</li>
+              <li>Comparative player analytics</li>
+            </ul>
+
+            <h2>
+              Match Outcome Predictor - Team Strength-Based Win Probability
+            </h2>
+            <h3>🎯 Objective</h3>
+            <p>
+              The Match Outcome Predictor estimates win probability between two
+              international teams by evaluating combined player strength, making
+              it a data-driven, player-centric prediction engine.
+            </p>
+
+            <h3>⚙️ Methodology</h3>
+            <ol>
+              <li>
+                <b>Team Roster Identification:</b> Identify squads from batting
+                and bowling datasets (up to 11 players per team).
+              </li>
+              <li>
+                <b>Performance Aggregation:</b> Compute each player's Batting
+                Score (average, strike rate, boundary %) and Bowling Score
+                (wickets, economy), combined into a Total Impact Score.
+              </li>
+              <li>
+                <b>Team Strength Calculation:</b> Aggregate mean batting
+                averages, strike rates, total wickets, economy rates, and total
+                impact scores for each team.
+              </li>
+            </ol>
+
+            <h3>📈 Probability Computation</h3>
+            <p>Calculate win probabilities using normalized score ratios:</p>
+            <ul>
+              <li>
+                Win Probability (Team A) = Team A Score / (Team A Score + Team B
+                Score)
+              </li>
+              <li>Win Probability (Team B) = 1 - Team A Probability</li>
+            </ul>
+
+            <h3>Output Format</h3>
+            <p>The final output presents:</p>
+            <ul>
+              <li>India Win Probability: 57.58%</li>
+              <li>Pakistan Win Probability: 42.42%</li>
+            </ul>
+            <p>Applications include:</p>
+            <ul>
+              <li>Pre-match analysis for broadcasters and strategists</li>
+              <li>Fantasy team boosters</li>
+              <li>Simulation-based tournament modeling</li>
+            </ul>
+            <p>
+              For the complete analysis, including formulas, implementation
+              details, and insights, please refer to the
+              <strong>Analysis Notebook</strong> linked below.
+            </p>
+
+            <p>
+              <a
+                href="https://colab.research.google.com/drive/1CEdwhPU8QEFhX0AntCN762ORH7-TXlEi?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Complete Analysis Notebook
+              </a>
+            </p>
+          </section>
+        </article>
+
+        <article class="contact" data-page="conclusion">
+          <header>
+            <h2 class="h2 article-title">Conclusion</h2>
+          </header>
+
+          <section class="about-text">
+            <h2>Conclusion</h2>
+            <p>
+              Cricklytics successfully demonstrates the power of structured data
+              analytics in the world of sports. By aggregating granular
+              match-level data and transforming it into player-centric insights,
+              we built a robust system capable of:
+            </p>
+            <ul>
+              <li>
+                Automatically selecting a balanced, high-performing Best XI from
+                any given set of teams.
+              </li>
+              <li>
+                Accurately estimating win probabilities between two
+                international teams using performance-driven metrics.
+              </li>
+              <li>
+                Enabling fine-grained player comparisons using a carefully
+                curated set of DAX measures and calculated KPIs.
+              </li>
+            </ul>
+            <p>
+              This project exemplifies how data can be used not just for
+              descriptive reporting, but also for strategic decision-making,
+              team optimization, and predictive intelligence in a real-world,
+              high-stakes sport like cricket.
+            </p>
+
+            <h2>🚀 Future Scope</h2>
+            <p>
+              While Cricklytics delivers a strong foundation, there are several
+              promising directions to enhance its capability and impact:
+            </p>
+            <ul>
+              <li>
+                <b>Machine Learning-Based Win Prediction:</b> Train supervised
+                models (e.g., logistic regression, XGBoost) using historical
+                match outcomes and aggregated team stats for more nuanced and
+                probabilistic outcome prediction.
+              </li>
+              <li>
+                <b>Real-Time Simulation Engine:</b> Integrate ball-by-ball data
+                to simulate dynamic win probabilities during a live match using
+                Monte Carlo or Bayesian approaches.
+              </li>
+              <li>
+                <b>Role Clustering with Unsupervised Learning:</b> Use
+                clustering algorithms (e.g., K-Means, DBSCAN) to automatically
+                group players into tactical roles based on multidimensional
+                stats—offering data-driven role identification.
+              </li>
+              <li>
+                <b>Player Performance Forecasting:</b> Build time-series models
+                (e.g., ARIMA, Prophet) to forecast future player form and likely
+                performance in upcoming fixtures.
+              </li>
+              <li>
+                <b>Interactive Dashboards & Visualizations:</b> Expand the
+                visual layer using BI tools (Power BI, Tableau) to allow
+                selectors, coaches, and fans to explore trends, matchups, and
+                scenarios in real-time.
+              </li>
+              <li>
+                <b>Integration with Fantasy Cricket APIs:</b> Extend the project
+                into a consumer-facing application by providing fantasy team
+                suggestions, captain/vice-captain picks, and trade optimization
+                based on upcoming matches.
+              </li>
+            </ul>
+            <p>
+              Cricklytics not only solves current analytical needs but also lays
+              the groundwork for scalable cricket intelligence systems. With the
+              right integrations and ML modeling, it has the potential to become
+              a full-fledged analytics suite for selectors, coaches, fans, and
+              broadcasters alike.
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
